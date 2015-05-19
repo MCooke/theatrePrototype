@@ -7138,9 +7138,19 @@ button.close {
     display: none !important;
   }
 }
-body {
-  background-color: white;
-  width: 960px;
+.product {
+  height: 100px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+.product_image {
+  height: 100px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.control {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
