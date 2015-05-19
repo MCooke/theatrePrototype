@@ -1,0 +1,16 @@
+@import "bootstrap/bootstrap";
+
+.product {
+	height: 100px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	&_image {
+		height: 100px;
+		background-size: cover;
+		background-position: 50%;
+	}
+}
+
+.control{
+	margin-bottom: 10px;
+}

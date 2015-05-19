@@ -33,13 +33,21 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
+      sass: {
+      	files: ['<%= config.src %>/assets/{,*/}*.scss'],
+      	tasks: ['sass']
+      },
+      js: {
+	      files: ['<%= config.src %>/assets/{,*/}*.js'],
+	      tasks: ['copy']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
           '<%= config.dist %>/{,*/}*.html',
-          '<%= config.dist %>/assets/{,*/}*.scss',
+          '<%= config.dist %>/assets/css/*.css',
           '<%= config.dist %>/assets/{,*/}*.js',
           '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -69,7 +77,7 @@ module.exports = function(grunt) {
 	        style: 'expanded'
 	      },
 	      files: {                         // Dictionary of files
-	        'dist/assets/css/main.css': 'src/assets/default.scss'
+	        'dist/assets/css/main.css': 'src/assets/css/default.scss'
 	      }
 	    }
 	  },
@@ -96,11 +104,11 @@ module.exports = function(grunt) {
         src: '**',
         dest: '<%= config.dist %>/assets/'
       },
-      theme: {
-        expand: true,
-        cwd: 'src/assets/',
-        src: '**',
-        dest: '<%= config.dist %>/assets/css/'
+      javascript: {
+      	expand: true,
+      	cwd: 'src/assets/js/',
+      	src: '**',
+      	dest: '<%= config.dist %>/assets/js/'
       }
     },
 
