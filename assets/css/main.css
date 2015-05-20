@@ -7139,9 +7139,8 @@ button.close {
   }
 }
 .product {
-  height: 100px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 .product_image {
   height: 100px;
