@@ -7,7 +7,7 @@
 	},
 	"2": {
 		"name": "Grand Central Hotel",
-		"distance": "12",
+		"distance": "2",
 		"stars": "3",
 		"price": "290"
 	},
@@ -25,7 +25,7 @@
 	},
 	"5": {
 		"name": "Holiday Inn Bloomsbury",
-		"distance": "25",
+		"distance": "9",
 		"stars": "1",
 		"price": "90"
 	}

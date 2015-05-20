@@ -1,13 +1,16 @@
-<a href="hotelInfo.html">
-	<section class="container product">
+<section class="product container">
+	<a href="hotelInfo.html">
 		<div class="row">
-			<div class="col-xs-4 product_image" style="background-image: url('http://lorempixel.com/100/150/city/');">
-			</div>
-			<div class="col-xs-8">
-				<h4>{{name}} <small>{{stars}}&star;</small></h4>
-				<span>{{distance}} Miles from theatre</span>
-				<button class="btn btn-primary pull-right">&pound;{{price}}</button>
+			<div class="media">
+				<div class="media-left media-middle">
+					<img class="media-object" src="http://lorempixel.com/100/100/city/{{distance}}" alt="...">
+				</div>
+				<div class="media-body">
+					<h3 class="media-heading">{{name}} <small>{{stars}}&star;</small></h3>
+					<span>{{distance}} miles from theatre</span>
+					<button class="btn btn-primary pull-right">&pound;{{price}}</button>
+				</div>
 			</div>
 		</div>
-	</section>
-</a>
+	</a>
+</section>

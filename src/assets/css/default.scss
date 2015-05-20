@@ -1,9 +1,8 @@
 @import "bootstrap/bootstrap";
 
 .product {
-	height: 100px;
 	margin-bottom: 10px;
-	border: 1px solid black;
+	border: 1px solid grey;
 	&_image {
 		height: 100px;
 		background-size: cover;
