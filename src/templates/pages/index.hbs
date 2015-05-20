@@ -4,9 +4,6 @@ heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
 
-{{> _showStub}}
-{{> _showStub}}
-{{> _showStub}}
-{{> _showStub}}
-{{> _showStub}}
-{{> _showStub}}
+{{#each shows}}
+	{{> _showStub}}
+{{/each}} 
