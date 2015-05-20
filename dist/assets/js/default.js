@@ -8,3 +8,5 @@ var toggleSeat = function( $this ){
 	$this.children('.label').toggleClass('label-default').toggleClass('label-success');
 	$this.children('.btn').toggleClass('hide');
 };
+
+$('#js_datePicker').datepicker();
