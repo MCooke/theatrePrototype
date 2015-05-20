@@ -8,7 +8,7 @@ lib-cov
 *.gz
 *.yo-rc.json
 
-*.DS_Store
+.DS_Store
 
 pids
 logs
