@@ -1,0 +1,36 @@
+{
+	"1": {
+		"name": "Upper Circle",
+		"bands": {
+			"a": {
+				"name": "Band A",
+				"price": "350"
+			},
+			"b": {
+				"name": "Band B",
+				"price": "150"
+			},
+			"c": {
+				"name": "Band C",
+				"price": "450"
+			}
+		}
+	},
+	"2": {
+		"name": "Stalls",
+		"bands": {
+			"a": {
+				"name": "Band A",
+				"price": "350"
+			},
+			"b": {
+				"name": "Band B",
+				"price": "150"
+			},
+			"c": {
+				"name": "Band C",
+				"price": "450"
+			}
+		}
+	}
+}
