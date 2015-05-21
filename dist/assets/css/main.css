@@ -1042,7 +1042,8 @@ html {
 
 .product {
   margin-bottom: 10px;
-  border: 1px solid grey;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
 }
 .product_image {
   height: 100px;
