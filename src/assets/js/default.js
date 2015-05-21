@@ -10,3 +10,5 @@ var toggleSeat = function( $this ){
 };
 
 $('#js_datePicker').datepicker();
+
+$('.gallery').slick({});

@@ -1,15 +1,34 @@
-@import "bootstrap/bootstrap";
+// @import "bootstrap/bootstrap";
+@import "vendor/normalize/normalize";
+@import "vendor/scss-flex-grid";
+@import "functions";
+@import "fontProps";
+@import "base";
+
+html {
+	font-family: sans-serif;
+}
 
 .product {
+	@extend .row;
 	margin-bottom: 10px;
 	border: 1px solid grey;
 	&_image {
+		@extend .col-xs-4;
+		@extend .col-sm-3;
 		height: 100px;
 		background-size: cover;
 		background-position: 50%;
 	}
+	&_body{
+		@extend .col-xs-8;
+		@extend .col-sm-9;
+	}
+	&_name {
+		@extend %fontSize3;
+	}
 }
 
 .control{
-	margin-bottom: 10px;
+	margin-bottom: 10px2
 }
