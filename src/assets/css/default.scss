@@ -27,11 +27,11 @@ a{
 }
 
 $breakpoints: (
-  default: '',
-  small: 768px,
-  medium: 992px,
-  large: 1200px
-);
+	default: '',
+	small: 768px,
+	medium: 992px,
+	large: 1200px
+	);
 
 @media (min-width: 768px) and (max-width: 992px){
 	.container{
@@ -92,9 +92,9 @@ $breakpoints: (
 		@extend %fontSize3;
 		content: '>';
 		position: absolute;
-	  right: 20px;
-	  top: 25%;
-	  opacity: 0.2;
+		right: 20px;
+		top: 25%;
+		opacity: 0.2;
 	}
 }
 
@@ -137,15 +137,26 @@ $breakpoints: (
 
 .block {
 	border: 1px solid $brand_white;
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	background: $brand_white;
 	display: inline-block;
+	&:after{
+		display: block;
+		content: "#{$brand_white}";
+	}
+
 	&-primary {
 		background: $brand_primary;
+		&:after{
+			content: "#{$brand_primary}";
+		}
 	}
 	&-accent {
 		background: $brand_accent;
+		&:after{
+			content: "#{$brand_accent}";
+		}
 	}
 }
 
