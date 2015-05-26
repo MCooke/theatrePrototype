@@ -65,6 +65,9 @@ $breakpoints: (
 		height: 100px;
 		background-size: cover;
 		background-position: 50%;
+		&-small{
+			height: 50px;
+		}
 	}
 	&_body{
 		// @extend .col-xs-8;
@@ -92,6 +95,17 @@ $breakpoints: (
 	  right: 20px;
 	  top: 25%;
 	  opacity: 0.2;
+	}
+}
+
+.seat{
+	min-height: 30px;
+	@extend %fontSize5;
+	border-bottom: 1px solid $brand_white;
+	.seat_information{
+		float: right;
+	}
+	.seat_price{
 	}
 }
 
@@ -135,10 +149,13 @@ $breakpoints: (
 	}
 }
 
-.control{
-	margin-bottom: 10px;
+.img-responsive{
+	max-width: 100%;
+}
+.hide{
+	display: none;
 }
 
-.list-group-item{
-	list-style: none;
+.control{
+	margin-bottom: 10px;
 }
