@@ -6,6 +6,10 @@ lead: Welcome to my blog!
 
 {{> _hotelControls}}
 
-{{#each hotels}}
-	{{> _hotelStub}}
-{{/each}}
+<div class="container">
+	<div class="row">
+		{{#each hotels}}
+			{{> _hotelStub}}
+		{{/each}}
+	</div>
+</div>
