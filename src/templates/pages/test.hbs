@@ -3,72 +3,82 @@ title: Hotel Product
 ---
 
 <div class="container">
-	<div>
-		<h2>Colours</h2>
+	<h2>Molecules</h2>	
+	
+	<section>
+		<h3>Colours</h3>
 		<div class="block block-default"></div>
 		<div class="block block-primary"></div>
 		<div class="block block-accent"></div>
-	</div>
+	</section>
 
-	<div>
-		<h2>Font Sizes</h2>
+	<section>
+		<h3>Font Sizes</h3>
 		<div class="fontSize1">Font Size 1</div>
 		<div class="fontSize2">Font Size 2</div>
 		<div class="fontSize3">Font Size 3</div>
 		<div class="fontSize4">Font Size 4</div>
 		<div class="fontSize5">Font Size 5</div>
 		<div class="fontSize6">Font Size 6</div>
-	</div>
+	</section>
 
-	<div>
-		<h2>Headers</h2>
+	<section>
+		<h3>Headers</h3>
 		<h1 class="hero">Hero Text</h1>
 		<h1>h1 Header</h1>
 		<h2>h2 Header</h2>
 		<h3>h3 Header</h3>
-	</div>
-
+	</section>
 	
-	<div>
-		<h2>Block Quote</h2>
-		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<section>
+		<h3>
+			Block Quote
+		</h3>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-		</div>
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+	</section>
 
+	<section>
+		<h3>
+			Paragraph
+		</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</section>
 
+	<section>
+		<h3>Buttons</h3>
+		<button class="btn btn-default">Default</button>
+		<button class="btn btn-primary">Primary</button>
+		<button class="btn btn-accent">Accent</button>
 
-		<div>
-			<h2>Paragraph</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+		<button class="btn btn-lg btn-primary">Primary LG</button>
 
+		<button class="btn btn-lg btn-block btn-primary">Block Primary LG</button>
+	</section>
 
+	<section>
+	<h3>Image</h3>
+	<div class="product_image col-xs-4" style="background-image: url('http://lorempixel.com/500/500/city/{{distance}}');"></div>
+	</section>
 
-			<div>
-				<h2>Buttons</h2>
-				<button class="btn btn-default">Default</button>
-				<button class="btn btn-primary">Primary</button>
-				<button class="btn btn-accent">Accent</button>
+</div>
 
-				<button class="btn btn-lg btn-primary">Primary LG</button>
-
-				<button class="btn btn-lg btn-block btn-primary">Block Primary LG</button>
-
-			</div>
-			
-
-			
-
-
-			{{> _hotelStub }}
-			{{> _showStub p}}
-		</div>
+<div class="container">
+	<h2>Organisms</h2>
+	
+	{{> _hotelStub }}
+	{{> _showStub p}}
+</div>
