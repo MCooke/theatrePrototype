@@ -72,6 +72,7 @@ $breakpoints: (
 	}
 	&_rating{
 		color: $brand_primary;
+		white-space: nowrap;
 	}
 	&_name {
 		@extend %fontSize2;
@@ -95,13 +96,12 @@ $breakpoints: (
 }
 
 .btn{
+	@extend %fontSize5;
 	background: $brand_white;
 	border: 1px solid $brand_white;
 	border-radius: 3px;
 	padding: 10px 15px;
 	text-decoration: none;
-	@extend %fontSize5;
-
 	&-primary, &-accent{
 		color: $brand_white;
 	}
@@ -114,6 +114,24 @@ $breakpoints: (
 	&-lg{
 		@extend %fontSize4;
 		padding: 5px 25px;
+	}
+	&-block {
+		display: block;
+		width: 100%;
+	}
+}
+
+.block {
+	border: 1px solid $brand_white;
+	height: 50px;
+	width: 50px;
+	background: $brand_white;
+	display: inline-block;
+	&-primary {
+		background: $brand_primary;
+	}
+	&-accent {
+		background: $brand_accent;
 	}
 }
 

@@ -1058,6 +1058,7 @@ a {
 }
 .product_rating {
   color: #7986cb;
+  white-space: nowrap;
 }
 .product_cta {
   float: right;
@@ -1092,6 +1093,24 @@ a {
 }
 .btn-lg {
   padding: 5px 25px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.block {
+  border: 1px solid #fafafa;
+  height: 50px;
+  width: 50px;
+  background: #fafafa;
+  display: inline-block;
+}
+.block-primary {
+  background: #7986cb;
+}
+.block-accent {
+  background: #b388ff;
 }
 
 .control {
