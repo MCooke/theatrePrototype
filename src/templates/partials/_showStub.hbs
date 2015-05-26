@@ -1,19 +1,11 @@
-<ul>
-{{#each shows}}
-
-	<li class="list-group-item">
-		<a href="pickDate.html">
-			<section class="container product">
-				<div class="row">
-					<div class="col-xs-3 product_image" style="background-image: url('{{imgSrc}}');">
-					</div>
-					<div class="col-xs-9">
-						<h4>{{name}} </h4>			
-						<button class="btn btn-primary pull-right">Select Show</button>
-					</div>
-				</div>
-			</section>
-		</a>
-	</li>
-	{{/each}}
-</ul>
+<a class="col-xs-12" href="pickDate.html">
+	<section class="product row">
+		<div class="col-xs-4 product_image" style="background-image: url('{{imgSrc}}');">
+		</div>
+		<div class="product_body col-xs-8">
+			<div class="product_header">
+				<span class="product_name">{{name}}</span>
+			</div>
+		</div>
+	</section>
+</a>

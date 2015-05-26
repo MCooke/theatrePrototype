@@ -4,4 +4,11 @@ heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
 
-	{{> _showStub}}
+
+<div class="container">
+	<div class="row">
+		{{#each shows}}
+			{{> _showStub}}
+		{{/each}}
+	</div>
+</div>
