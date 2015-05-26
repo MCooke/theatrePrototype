@@ -101,6 +101,7 @@ $breakpoints: (
 	padding: 10px 15px;
 	text-decoration: none;
 	@extend %fontSize5;
+
 	&-primary, &-accent{
 		color: $brand_white;
 	}
@@ -114,4 +115,12 @@ $breakpoints: (
 		@extend %fontSize4;
 		padding: 5px 25px;
 	}
+}
+
+.control{
+	margin-bottom: 10px;
+}
+
+.list-group-item{
+	list-style: none;
 }
