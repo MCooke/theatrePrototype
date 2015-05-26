@@ -1112,16 +1112,26 @@ a {
 
 .block {
   border: 1px solid #fafafa;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background: #fafafa;
   display: inline-block;
+}
+.block:after {
+  display: block;
+  content: "#fafafa";
 }
 .block-primary {
   background: #7986cb;
 }
+.block-primary:after {
+  content: "#7986cb";
+}
 .block-accent {
   background: #b388ff;
+}
+.block-accent:after {
+  content: "#b388ff";
 }
 
 .img-responsive {
