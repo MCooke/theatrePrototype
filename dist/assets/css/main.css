@@ -275,26 +275,26 @@ th {
   clear: both;
 }
 
-.row, .section_row, .stub {
+.row, .section_row, .stub, .control {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .section_row:before, .stub:before, .row:after, .section_row:after, .stub:after {
+.row:before, .section_row:before, .stub:before, .control:before, .row:after, .section_row:after, .stub:after, .control:after {
   content: " ";
   display: table;
 }
-.row:after, .section_row:after, .stub:after {
+.row:after, .section_row:after, .stub:after, .control:after {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .stub_aside, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .stub_main, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .stub_aside, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .control_label, .control_input, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .stub_main, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .stub_aside, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .stub_main, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .stub_wrapper {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .stub_aside, .col-xs-5, .col-xs-6, .control_label, .control_input, .col-xs-7, .col-xs-8, .stub_main, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .stub_wrapper {
   float: left;
 }
 
@@ -318,7 +318,7 @@ th {
   width: 41.66667%;
 }
 
-.col-xs-6 {
+.col-xs-6, .control_label, .control_input {
   width: 50%;
 }
 
@@ -1129,7 +1129,7 @@ th {
     margin-left: 100%;
   }
 }
-p, .fontSize6, html {
+html, p, .fontSize6 {
   font-size: 12px;
   line-height: 1.3;
 }
@@ -1139,7 +1139,7 @@ blockquote, label, .fontSize5, .seat, .btn, .stub_footer {
   line-height: 1.13043;
 }
 
-h3, .fontSize4, .btn-lg {
+h3, .fontSize4, .btn-lg, .control {
   font-size: 15.87px;
   line-height: 1.96597;
 }
@@ -1160,7 +1160,7 @@ h1, .fontSize2, .stub_title {
 }
 
 @media (min-width: 768px) {
-  p, .fontSize6, html {
+  html, p, .fontSize6 {
     font-size: 16px;
     line-height: 1.3;
   }
@@ -1170,7 +1170,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1.08333;
   }
 
-  h3, .fontSize4, .btn-lg {
+  h3, .fontSize4, .btn-lg, .control {
     font-size: 23.04px;
     line-height: 1.80556;
   }
@@ -1191,7 +1191,7 @@ h1, .fontSize2, .stub_title {
   }
 }
 @media (min-width: 992px) {
-  p, .fontSize6, html {
+  html, p, .fontSize6 {
     font-size: 14px;
     line-height: 1.4;
   }
@@ -1201,7 +1201,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1;
   }
 
-  h3, .fontSize4, .btn-lg {
+  h3, .fontSize4, .btn-lg, .control {
     font-size: 27.44px;
     line-height: 1.42857;
   }
@@ -1222,7 +1222,7 @@ h1, .fontSize2, .stub_title {
   }
 }
 @media (min-width: 1200p4) {
-  p, .fontSize6, html {
+  html, p, .fontSize6 {
     font-size: 22px;
     line-height: 1.5;
   }
@@ -1232,7 +1232,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1;
   }
 
-  h3, .fontSize4, .btn-lg {
+  h3, .fontSize4, .btn-lg, .control {
     font-size: 49.5px;
     line-height: 1.33333;
   }
@@ -1252,6 +1252,10 @@ h1, .fontSize2, .stub_title {
     line-height: 1.58025;
   }
 }
+html {
+  font-family: sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -1259,11 +1263,7 @@ a:visited {
   color: black;
 }
 
-html {
-  font-family: sans-serif;
-}
-
-.navbar, .control {
+.navbar {
   margin-bottom: 20px;
 }
 
@@ -1307,13 +1307,6 @@ html {
   display: none;
 }
 
-.control {
-  margin-bottom: 10px;
-}
-.control_buttonGroup {
-  float: right;
-}
-
 .group-right {
   float: right;
 }
@@ -1340,6 +1333,9 @@ html {
 .btn-block {
   display: block;
   width: 100%;
+}
+.btn-thin {
+  padding: 10px 5px;
 }
 
 .stub {
@@ -1368,7 +1364,21 @@ html {
 }
 .stub_wrapper {
   padding-bottom: 10px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.control {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+.control-stage {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.control_input {
+  text-align: right;
+  text-decoration: underline;
 }
 
 .styleBlock {

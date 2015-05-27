@@ -8,11 +8,6 @@ $brand_primary: $indigo300;
 $brand_accent: $deepPurpleA100;
 $brand_white: $grey50;
 
-html {
-	font-family: sans-serif;
-	@extend %fontSize6;
-}
-
 $breakpoints: (
 	default: '',
 	small: 768px,
@@ -20,7 +15,7 @@ $breakpoints: (
 	large: 1200px
 	);
 
-.navbar, .control{
+.navbar{
 	margin-bottom: 20px;
 }
 
@@ -74,13 +69,6 @@ $breakpoints: (
 	display: none;
 }
 
-.control{
-	margin-bottom: 10px;
-	&_buttonGroup {
-		float: right;
-	}
-}
-
 .group{
 	&-right{
 		float: right;
@@ -89,6 +77,7 @@ $breakpoints: (
 
 @import "blocks/btn";
 @import "blocks/stub";
+@import "blocks/control";
 
 @import "summary";
 
