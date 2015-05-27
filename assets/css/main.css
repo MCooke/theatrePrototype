@@ -275,26 +275,26 @@ th {
   clear: both;
 }
 
-.row, .section_row, .product {
+.row, .section_row, .stub {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .section_row:before, .product:before, .row:after, .section_row:after, .product:after {
+.row:before, .section_row:before, .stub:before, .row:after, .section_row:after, .stub:after {
   content: " ";
   display: table;
 }
-.row:after, .section_row:after, .product:after {
+.row:after, .section_row:after, .stub:after {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .product_image, .col-md-3, .col-lg-3, .col-xs-4, .product_image, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .product_body, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .product_body, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .stub_aside, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .stub_main, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .product_image, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .product_body, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .stub_aside, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .stub_main, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 
@@ -310,7 +310,7 @@ th {
   width: 25%;
 }
 
-.col-xs-4, .product_image {
+.col-xs-4, .stub_aside {
   width: 33.33333%;
 }
 
@@ -326,7 +326,7 @@ th {
   width: 58.33333%;
 }
 
-.col-xs-8, .product_body {
+.col-xs-8, .stub_main {
   width: 66.66667%;
 }
 
@@ -503,7 +503,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .product_image, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .product_body, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .stub_aside, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .stub_main, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -515,7 +515,7 @@ th {
     width: 16.66667%;
   }
 
-  .col-sm-3, .product_image {
+  .col-sm-3, .stub_aside {
     width: 25%;
   }
 
@@ -539,7 +539,7 @@ th {
     width: 66.66667%;
   }
 
-  .col-sm-9, .product_body {
+  .col-sm-9, .stub_main {
     width: 75%;
   }
 
@@ -1134,7 +1134,7 @@ p, .fontSize6, html {
   line-height: 1.3;
 }
 
-blockquote, label, .fontSize5, .seat, .product_footer, .btn {
+blockquote, label, .fontSize5, .seat, .stub_footer, .btn {
   font-size: 13.8px;
   line-height: 1.13043;
 }
@@ -1144,12 +1144,12 @@ h3, .fontSize4, .btn-lg {
   line-height: 1.96597;
 }
 
-h2, .fontSize3, .product:after {
+h2, .fontSize3 {
   font-size: 18.2505px;
   line-height: 1.70954;
 }
 
-h1, .fontSize2, .product_name {
+h1, .fontSize2, .stub_title {
   font-size: 20.98807px;
   line-height: 1.48656;
 }
@@ -1165,7 +1165,7 @@ h1, .fontSize2, .product_name {
     line-height: 1.3;
   }
 
-  blockquote, label, .fontSize5, .seat, .product_footer, .btn {
+  blockquote, label, .fontSize5, .seat, .stub_footer, .btn {
     font-size: 19.2px;
     line-height: 1.08333;
   }
@@ -1175,12 +1175,12 @@ h1, .fontSize2, .product_name {
     line-height: 1.80556;
   }
 
-  h2, .fontSize3, .product:after {
+  h2, .fontSize3 {
     font-size: 27.648px;
     line-height: 1.50463;
   }
 
-  h1, .fontSize2, .product_name {
+  h1, .fontSize2, .stub_title {
     font-size: 33.1776px;
     line-height: 1.25386;
   }
@@ -1196,7 +1196,7 @@ h1, .fontSize2, .product_name {
     line-height: 1.4;
   }
 
-  blockquote, label, .fontSize5, .seat, .product_footer, .btn {
+  blockquote, label, .fontSize5, .seat, .stub_footer, .btn {
     font-size: 19.6px;
     line-height: 1;
   }
@@ -1206,12 +1206,12 @@ h1, .fontSize2, .product_name {
     line-height: 1.42857;
   }
 
-  h2, .fontSize3, .product:after {
+  h2, .fontSize3 {
     font-size: 38.416px;
     line-height: 1.02041;
   }
 
-  h1, .fontSize2, .product_name {
+  h1, .fontSize2, .stub_title {
     font-size: 53.7824px;
     line-height: 1.45773;
   }
@@ -1227,7 +1227,7 @@ h1, .fontSize2, .product_name {
     line-height: 1.5;
   }
 
-  blockquote, label, .fontSize5, .seat, .product_footer, .btn {
+  blockquote, label, .fontSize5, .seat, .stub_footer, .btn {
     font-size: 33px;
     line-height: 1;
   }
@@ -1237,12 +1237,12 @@ h1, .fontSize2, .product_name {
     line-height: 1.33333;
   }
 
-  h2, .fontSize3, .product:after {
+  h2, .fontSize3 {
     font-size: 74.25px;
     line-height: 1.77778;
   }
 
-  h1, .fontSize2, .product_name {
+  h1, .fontSize2, .stub_title {
     font-size: 111.375px;
     line-height: 1.18519;
   }
@@ -1315,37 +1315,26 @@ a {
   float: right;
 }
 
-.product {
-  margin-bottom: 10px;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 10px;
-  position: relative;
+.stub_aside-small {
+  height: 50px;
 }
-.product_image {
+.stub_aside-right {
+  float: right;
+}
+.stub_thumb {
   height: 100px;
   background-size: cover;
   background-position: 50%;
 }
-.product_image-small {
-  height: 50px;
-}
-.product_rating {
+.stub_rating {
   color: #7986cb;
   white-space: nowrap;
 }
-.product_cta {
-  float: right;
-}
-.product_footer {
-  text-align: right;
+.stub_footer {
   margin-top: 20px;
 }
-.product:after {
-  content: '>';
-  position: absolute;
-  right: 20px;
-  top: 25%;
-  opacity: 0.2;
+.stub_footer-right {
+  text-align: right;
 }
 
 .btn {
