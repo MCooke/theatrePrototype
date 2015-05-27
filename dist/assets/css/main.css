@@ -1372,4 +1372,9 @@ a {
   width: 100%;
 }
 
+.styleBlock {
+  border-bottom: 1px solid #7986cb;
+  padding-bottom: 25px;
+}
+
 /*# sourceMappingURL=main.css.map */
