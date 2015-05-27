@@ -150,3 +150,8 @@ $breakpoints: (
 		float: right;
 	}
 }
+
+.styleBlock{
+	border-bottom: 1px solid $brand_primary;
+	padding-bottom: 25px;
+}
