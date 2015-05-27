@@ -13,10 +13,6 @@ html {
 	@extend %fontSize6;
 }
 
-a{
-	text-decoration: none;
-}
-
 $breakpoints: (
 	default: '',
 	small: 768px,
@@ -91,11 +87,10 @@ $breakpoints: (
 	}
 }
 
+@import "blocks/btn";
 @import "blocks/stub";
 
-
 @import "summary";
-@import "buttons";
 
 .styleBlock{
 	border-bottom: 1px solid $brand_primary;

@@ -1,20 +1,20 @@
 .hero {
-  @extend %fontSize1;
+	@extend %fontSize1;
 }
 h1 {
-  @extend %fontSize2;
+	@extend %fontSize2;
 }
 h2 {
-  @extend %fontSize3;
+	@extend %fontSize3;
 }
 h3 {
-  @extend %fontSize4;
+	@extend %fontSize4;
 }
 blockquote {
-  @extend %fontSize5;
+	@extend %fontSize5;
 }
 p {
-  @extend %fontSize6;
+	@extend %fontSize6;
 }
 label {
 	@extend %fontSize5;
@@ -37,4 +37,12 @@ label {
 }
 .fontSize6 {
 	@extend %fontSize6;
+}
+
+
+a{
+	text-decoration: none;
+	&:visited{
+		color: black;
+	}
 }
