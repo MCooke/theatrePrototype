@@ -16,6 +16,9 @@ blockquote {
 p {
   @extend %fontSize6;
 }
+label {
+	@extend %fontSize5;
+}
 
 .fontSize1 {
 	@extend %fontSize1;
