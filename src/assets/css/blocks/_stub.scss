@@ -1,0 +1,36 @@
+.stub {
+	@extend .row;
+	&_aside {
+		@extend .col-xs-4;
+		@extend .col-sm-3;
+		&-small {
+			height: 50px;
+		}
+		&-right {
+			float: right;
+		}
+	}
+	&_main {
+		@extend .col-xs-8;
+		@extend .col-sm-9;
+	}
+	&_title {
+		@extend %fontSize2;
+	}
+	&_thumb {
+		height: 100px;
+		background-size: cover;
+		background-position: 50%;
+	}
+	&_rating{
+		color: $brand_primary;
+		white-space: nowrap;
+	}
+	&_footer{
+		margin-top: 20px;
+		@extend %fontSize5;
+		&-right {
+			text-align: right;
+		}
+	}
+}

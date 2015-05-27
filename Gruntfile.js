@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       sass: {
-      	files: ['<%= config.src %>/assets/{,*/}*.scss'],
+      	files: ['<%= config.src %>/assets/{,*/}*.scss', '<%= config.src %>/assets/{,*/}*/*.scss'],
       	tasks: ['sass']
       },
       js: {
