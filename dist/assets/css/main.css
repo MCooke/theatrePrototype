@@ -1154,7 +1154,7 @@ h1, .fontSize2, .stub_title {
   line-height: 1.48656;
 }
 
-.hero, .fontSize1 {
+.hero, .fontSize1, .panel_title {
   font-size: 24.13629px;
   line-height: 1.29266;
 }
@@ -1185,7 +1185,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1.25386;
   }
 
-  .hero, .fontSize1 {
+  .hero, .fontSize1, .panel_title {
     font-size: 39.81312px;
     line-height: 1.04488;
   }
@@ -1216,7 +1216,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1.45773;
   }
 
-  .hero, .fontSize1 {
+  .hero, .fontSize1, .panel_title {
     font-size: 75.29536px;
     line-height: 1.04123;
   }
@@ -1247,7 +1247,7 @@ h1, .fontSize2, .stub_title {
     line-height: 1.18519;
   }
 
-  .hero, .fontSize1 {
+  .hero, .fontSize1, .panel_title {
     font-size: 167.0625px;
     line-height: 1.58025;
   }
@@ -1258,9 +1258,6 @@ html {
 
 a {
   text-decoration: none;
-}
-a:visited {
-  color: black;
 }
 
 .navbar {
@@ -1327,6 +1324,7 @@ body {
   border-radius: 3px;
   padding: 10px 15px;
   text-decoration: none;
+  display: inline-block;
 }
 .btn-primary, .btn-accent {
   color: #fafafa;
@@ -1389,6 +1387,11 @@ body {
 .control_input {
   text-align: right;
   text-decoration: underline;
+}
+
+.panel_section {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .styleBlock {

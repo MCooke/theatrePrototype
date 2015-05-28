@@ -18,6 +18,7 @@ $breakpoints: (
 .navbar{
 	margin-bottom: 20px;
 }
+
 body {
 	background: $grey200;
 }
@@ -84,6 +85,7 @@ body {
 @import "blocks/btn";
 @import "blocks/stub";
 @import "blocks/control";
+@import "blocks/panel";
 
 @import "summary";
 
