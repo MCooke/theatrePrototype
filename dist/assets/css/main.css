@@ -1129,12 +1129,12 @@ th {
     margin-left: 100%;
   }
 }
-html, p, .fontSize6 {
+html, p, .fontSize6, .input_label {
   font-size: 12px;
   line-height: 1.3;
 }
 
-blockquote, label, .fontSize5, .seat, .btn, .stub_footer {
+blockquote, label, .fontSize5, .seat, .btn, .stub_footer, .input_field {
   font-size: 13.8px;
   line-height: 1.13043;
 }
@@ -1160,12 +1160,12 @@ h1, .fontSize2, .stub_title {
 }
 
 @media (min-width: 768px) {
-  html, p, .fontSize6 {
+  html, p, .fontSize6, .input_label {
     font-size: 16px;
     line-height: 1.3;
   }
 
-  blockquote, label, .fontSize5, .seat, .btn, .stub_footer {
+  blockquote, label, .fontSize5, .seat, .btn, .stub_footer, .input_field {
     font-size: 19.2px;
     line-height: 1.08333;
   }
@@ -1191,12 +1191,12 @@ h1, .fontSize2, .stub_title {
   }
 }
 @media (min-width: 992px) {
-  html, p, .fontSize6 {
+  html, p, .fontSize6, .input_label {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  blockquote, label, .fontSize5, .seat, .btn, .stub_footer {
+  blockquote, label, .fontSize5, .seat, .btn, .stub_footer, .input_field {
     font-size: 19.6px;
     line-height: 1;
   }
@@ -1222,12 +1222,12 @@ h1, .fontSize2, .stub_title {
   }
 }
 @media (min-width: 1200p4) {
-  html, p, .fontSize6 {
+  html, p, .fontSize6, .input_label {
     font-size: 22px;
     line-height: 1.5;
   }
 
-  blockquote, label, .fontSize5, .seat, .btn, .stub_footer {
+  blockquote, label, .fontSize5, .seat, .btn, .stub_footer, .input_field {
     font-size: 33px;
     line-height: 1;
   }
@@ -1392,6 +1392,23 @@ body {
 .panel_section {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.input {
+  position: relative;
+  border-top: 1px solid #616161;
+  border-right: 1px solid #616161;
+}
+.input_field {
+  width: 100%;
+  padding: 25px 10px 10px 10px;
+  border: none;
+}
+.input_label {
+  color: #616161;
+  position: absolute;
+  top: 5px;
+  left: 25px;
 }
 
 .styleBlock {
