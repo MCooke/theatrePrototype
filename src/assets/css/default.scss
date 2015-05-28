@@ -82,6 +82,10 @@ body {
 	}
 }
 
+.form {
+	background: $grey50;
+}
+
 @import "blocks/btn";
 @import "blocks/stub";
 @import "blocks/control";
