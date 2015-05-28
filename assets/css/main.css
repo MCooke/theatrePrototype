@@ -1318,6 +1318,10 @@ body {
   float: right;
 }
 
+.form {
+  background: #fafafa;
+}
+
 .btn {
   background: #fafafa;
   border: 1px solid #fafafa;
@@ -1403,6 +1407,7 @@ body {
   width: 100%;
   padding: 25px 10px 10px 10px;
   border: none;
+  background: transparent;
 }
 .input_label {
   color: #616161;
