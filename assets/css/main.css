@@ -1267,6 +1267,10 @@ a:visited {
   margin-bottom: 20px;
 }
 
+body {
+  background: #eeeeee;
+}
+
 .seat {
   min-height: 30px;
   border-bottom: 1px solid #fafafa;
@@ -1297,6 +1301,12 @@ a:visited {
 }
 .block-accent:after {
   content: "#b388ff";
+}
+
+.section {
+  background: #fafafa;
+  box-shadow: 0px 5px 5px #bdbdbd;
+  margin-top: 20px;
 }
 
 .img-responsive {
@@ -1340,6 +1350,7 @@ a:visited {
 
 .stub {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .stub_aside-small {
   height: 50px;
@@ -1348,7 +1359,7 @@ a:visited {
   float: right;
 }
 .stub_thumb {
-  height: 100px;
+  height: 125px;
   background-size: cover;
   background-position: 50%;
 }
@@ -1363,7 +1374,6 @@ a:visited {
   text-align: right;
 }
 .stub_wrapper {
-  padding-bottom: 10px;
   border-bottom: 1px solid #bdbdbd;
 }
 
@@ -1373,8 +1383,8 @@ a:visited {
   border-bottom: 1px solid #eeeeee;
 }
 .control-stage {
-  padding-top: 10px;
   padding-bottom: 10px;
+  border: none;
 }
 .control_input {
   text-align: right;
