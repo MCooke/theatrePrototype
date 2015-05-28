@@ -1,12 +1,12 @@
-.control{
+.control {
 	@extend .row;
 	@extend %fontSize4;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-bottom: 1px solid $grey200;
-	&-stage{
-		padding-top: 10px;
+	&-stage {
 		padding-bottom: 10px;
+		border: none;
 	}
 	&_label {
 		@extend .col-xs-6;

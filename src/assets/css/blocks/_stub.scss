@@ -1,6 +1,7 @@
 .stub {
 	@extend .row;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	&_aside {
 		@extend .col-xs-4;
 		@extend .col-sm-3;
@@ -19,7 +20,7 @@
 		@extend %fontSize2;
 	}
 	&_thumb {
-		height: 100px;
+		height: 125px;
 		background-size: cover;
 		background-position: 50%;
 	}
@@ -36,7 +37,7 @@
 	}
 	&_wrapper{
 		@extend .col-xs-12;
-		padding-bottom: 10px;
+		// padding-bottom: 10px;
 		border-bottom: 1px solid $grey400;
 	}
 }

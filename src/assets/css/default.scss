@@ -18,6 +18,9 @@ $breakpoints: (
 .navbar{
 	margin-bottom: 20px;
 }
+body {
+	background: $grey200;
+}
 
 .seat{
 	min-height: 30px;
@@ -57,6 +60,9 @@ $breakpoints: (
 
 .section{
 	@extend .container;
+	background: $grey50;
+	box-shadow: 0px 5px 5px $grey400;
+	margin-top: 20px;
 	&_row {
 		@extend .row;
 	}
