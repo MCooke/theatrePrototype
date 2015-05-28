@@ -23,16 +23,32 @@ body {
 	background: $grey200;
 }
 
+@import "blocks/btn";
+@import "blocks/stub";
+@import "blocks/control";
+@import "blocks/panel";
+@import "blocks/input";
+
 .seat{
-	min-height: 30px;
+	min-height: 40px;
 	@extend %fontSize5;
 	border-bottom: 1px solid $brand_white;
 	.seat_information{
 		float: right;
 	}
-	.seat_price{
+	
+	.seat_name, .seat_price{
+		display: inline-block;
+  		padding: 11px 0;
+	}
+
+	.seat_information{
+	text-align: right;
 	}
 }
+
+
+
 
 .block {
 	border: 1px solid $brand_white;
@@ -69,6 +85,7 @@ body {
 	}
 }
 
+
 .img-responsive{
 	max-width: 100%;
 }
@@ -85,14 +102,6 @@ body {
 .form {
 	background: $grey50;
 }
-
-@import "blocks/btn";
-@import "blocks/stub";
-@import "blocks/control";
-@import "blocks/panel";
-@import "blocks/input";
-
-@import "summary";
 
 .styleBlock{
 	border-bottom: 1px solid $brand_primary;
