@@ -1,0 +1,9 @@
+.panel {
+	&_section {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&_title {
+		@extend %fontSize1;
+	}
+}

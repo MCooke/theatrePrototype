@@ -5,6 +5,7 @@
 	border-radius: 3px;
 	padding: 10px 15px;
 	text-decoration: none;
+	display: inline-block;
 	&-primary, &-accent{
 		color: $brand_white;
 	}
