@@ -1269,11 +1269,18 @@ body {
 }
 
 .seat {
-  min-height: 30px;
+  min-height: 40px;
   border-bottom: 1px solid #fafafa;
 }
 .seat .seat_information {
   float: right;
+}
+.seat .seat_name, .seat .seat_price {
+  display: inline-block;
+  padding: 11px 0;
+}
+.seat .seat_information {
+  text-align: right;
 }
 
 .block {
@@ -1306,21 +1313,9 @@ body {
   margin-top: 20px;
 }
 
-.img-responsive {
-  max-width: 100%;
-}
-
-.hide {
-  display: none;
-}
-
-.group-right {
-  float: right;
-}
-
 .btn {
   background: #fafafa;
-  border: 1px solid #fafafa;
+  border: 0px solid #fafafa;
   border-radius: 3px;
   padding: 10px 15px;
   text-decoration: none;
@@ -1409,6 +1404,18 @@ body {
   position: absolute;
   top: 5px;
   left: 25px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.group-right {
+  float: right;
 }
 
 .styleBlock {
