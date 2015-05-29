@@ -1339,9 +1339,20 @@ body {
   text-decoration: underline;
 }
 
+.panel {
+  margin-bottom: 100px;
+}
 .panel_section {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.panel_section-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #eeeeee;
+  margin-bottom: 0;
 }
 
 .input {
