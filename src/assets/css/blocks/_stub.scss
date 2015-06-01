@@ -2,9 +2,17 @@
 	@extend .row;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	&-summary {
+		.stub_aside{
+			@extend .col-sm-12;
+		}
+		.stub_main {
+			@extend .col-sm-12;
+		}
+	}
 	&_aside {
 		@extend .col-xs-4;
-		@extend .col-sm-3;
+		@extend .col-sm-5;
 		&-small {
 			height: 50px;
 		}
@@ -14,7 +22,7 @@
 	}
 	&_main {
 		@extend .col-xs-8;
-		@extend .col-sm-9;
+		@extend .col-sm-7;
 	}
 	&_title {
 		@extend %fontSize2;

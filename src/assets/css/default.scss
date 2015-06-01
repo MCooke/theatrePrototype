@@ -6,7 +6,7 @@
 
 $brand_primary: $indigo300;
 $brand_accent: $deepPurpleA100;
-$brand_white: $grey50;
+$brand_white: $grey100;
 
 $breakpoints: (
 	default: '',
@@ -23,11 +23,14 @@ body {
 	background: $grey200;
 }
 
+
+@import "blocks/section";
 @import "blocks/btn";
 @import "blocks/stub";
 @import "blocks/control";
 @import "blocks/panel";
 @import "blocks/input";
+@import "blocks/price";
 
 .seat{
 	min-height: 40px;
@@ -46,9 +49,6 @@ body {
 	text-align: right;
 	}
 }
-
-
-
 
 .block {
 	border: 1px solid $brand_white;
@@ -75,35 +75,24 @@ body {
 	}
 }
 
-.section{
-	@extend .container;
-	background: $grey50;
-	box-shadow: 0px 5px 5px $grey400;
-	margin-top: 20px;
-	&_row {
-		@extend .row;
-	}
-}
-
-
 .img-responsive{
 	max-width: 100%;
 }
+
 .hide{
 	display: none;
-}
-
-.group{
-	&-right{
-		float: right;
-	}
-}
-
-.form {
-	background: $grey50;
 }
 
 .styleBlock{
 	border-bottom: 1px solid $brand_primary;
 	padding-bottom: 25px;
+}
+
+@media (min-width: $screen-sm-min) {
+	.wrapper{
+		background: $grey50;
+	}
+	.section{
+		margin-top: 0;
+	}
 }

@@ -3,15 +3,15 @@
 		"name": "Upper Circle",
 		"bands": {
 			"a": {
-				"name": "Band A",
+				"name": "A",
 				"price": "350"
 			},
 			"b": {
-				"name": "Band B",
+				"name": "B",
 				"price": "150"
 			},
 			"c": {
-				"name": "Band C",
+				"name": "C",
 				"price": "450"
 			}
 		}
@@ -20,15 +20,15 @@
 		"name": "Stalls",
 		"bands": {
 			"a": {
-				"name": "Band A",
+				"name": "A",
 				"price": "350"
 			},
 			"b": {
-				"name": "Band B",
+				"name": "B",
 				"price": "150"
 			},
 			"c": {
-				"name": "Band C",
+				"name": "C",
 				"price": "450"
 			}
 		}

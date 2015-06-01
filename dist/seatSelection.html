@@ -29,94 +29,47 @@
 
 
     
-
-<section class="section">
-	<div class="stub">
+<div class="container">
+	<div class="row">
+		<section class="section col-xs-12 col-sm-4">
+	<div class="stub stub-summary">
 		<div class="stub_aside">
 			<div class="stub_thumb" style="background-image: url('http://lorempixel.com/500/500/city/1');">
 			</div>
 		</div>
-		<div class="stub_body">
+		<div class="stub_main">
 			<span class="stub_title">The Lion King</span>
 			<div class="stub_description">at Lyceum Theatre</div>
 		</div>
 	</div>
-	<div class="control">
-		<span class="control_label">
-			Show Date:
-		</span>
-		<span class="control_input">
-			2nd May 2015
-		</span>
-	</div>
-	<div class="control">
-		<span class="control_label">
-			Show Time:
-		</span>
-		<span class="control_input">
-			20:00
-		</span>
-	</div>
-	<div class="control">
-		<span class="control_label">
-			Seating Area:
-		</span>
-		<span class="control_input">
-			Upper Circle
-		</span>
-	</div>
-	<div class="control">
-		<span class="control_label">
-			Tickets:
-		</span>
-		<span class="control_input">
-			2
-		</span>
-	</div>
-	<div class="stub">
-		<div class="stub_aside">
-			<div class="stub_thumb" style="background-image: url('http://lorempixel.com/500/500/city/2');">
-			</div>
-		</div>
-		<div class="stub_body">
-			<span class="stub_title">Strand Palace</span>
-			<span class="stub_rating">
-				<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-			</span>
-			<div class="stub_description">5 miles from theatre</div>
-		</div>
-	</div>
+	
+	
 </section>
 
-<div class="container">
-	<div class="row">
-		<div class="control_group col-xs-12">
-			<label class="control_label">Show Date:</label>
-			<span class="control_input control_input-disabled">2nd May 2015</span>
+		<div id="seatControls" class="section col-xs-12 col-sm-8">
+	<div class="control control-stage">
+		<label class="control_label">Show Date:</label>
+		<span class="control_input">2nd May 2015</span>
+	</div>
+	<div class="control control-stage">
+		<label class="control_label">Show Time:</label>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default" href="">13:00</button>
+			<button type="button" class="btn btn-primary" href="">20:00</button>
 		</div>
-		<div class="control_group col-xs-12">
-			<label class="control_label">Show Time:</label>
-			<div class="control_buttonGroup btn-group">
-				<button type="button" class="btn btn-default" href="">13:00</button>
-				<button type="button" class="btn btn-primary" href="">20:00</button>
-			</div>
-		</div>
-		<div class="control_group col-xs-12">
-			<div class="group group-left">
-				<label class="control_label">Tickets:</label>
-			</div>
-			<div class="group group-right">
-				<button type="button" class="btn btn-default">&minus;</button>
-				<button type="button" class="btn btn-default">2</button>
-				<button type="button" class="btn btn-default">&plus;</button>
-			</div>
+	</div>
+	<div class="control control-stage">
+		<label class="control_label">Tickets:</label>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default">&minus;</button>
+			<button type="button" class="btn btn-default">2</button>
+			<button type="button" class="btn btn-default">&plus;</button>
 		</div>
 	</div>
 </div>
-<div class="container">
+
+		<div class="section col-xs-12 col-sm-8 col-sm-offset-4">
 	<img src="http://placehold.it/800x400" alt="" class="img-responsive">
-</div>
-<div class="container">
 	<h2>Lyceum Theatre</h2>
 	
 		<div class="panel panel-default">
@@ -125,32 +78,50 @@
 			</div>
 			<div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band A</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;350</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">A</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band B</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;150</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">B</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band C</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;450</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">C</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
 			</div>
 		</div>
@@ -161,36 +132,56 @@
 			</div>
 			<div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band A</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;350</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">A</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band B</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;150</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">B</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
-					<div class="seat">
-	<span class="stub_aside seat_name">Band C</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;450</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+					<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">C</div></span>
+		<div class="stub_main">
+			
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
-</div>
 
+</div>
 				
 			</div>
 		</div>
 	
+</div>
+	</div>
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

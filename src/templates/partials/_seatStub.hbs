@@ -1,7 +1,14 @@
-<div class="seat">
-	<span class="stub_aside seat_name">{{name}}</span>
-	<div class="seat_information stub_main">
-		<span class="seat_price"><small>from</small> &pound;{{price}}</span>
-		<a href="hotels.html" id="js_hide" class="hide btn btn-accent">Confirm</a>
+<div class="stub_wrapper">
+	<div class="stub js_seat">
+		<span class="stub_aside"><div class="stub_title">{{name}}</div></span>
+		<div class="stub_main">
+			{{!-- {{> _displayedPrice}} --}}
+			<div class="price">
+				<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
+				<div class="price_description">includes tickets &amp; hotel</div>
+			</div>
+			<a href="hotels.html#hotelControls" id="js_hide" class="hide btn btn-accent">Confirm</a>
+		</div>
 	</div>
+
 </div>

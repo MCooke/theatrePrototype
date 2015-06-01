@@ -3,16 +3,27 @@ title: Hotel Product
 heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
-<section class="section">
-	<a href="hotels.html" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> Pick a different hotel</a>
-</section>
-<section class="section">
-	<div class="panel">
+<div class="wrapper container">
+	{{> _summary summary.hotels}}
+	<div class="col-xs-12 col-sm-4">
+		<a id="pickDifferent" href="hotels.html" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> Pick a different hotel</a>
+	</div>
+	<div class="panel col-xs-12 col-sm-8">
 		<div class="panel_section panel_section-header">
 			<span class="panel_title">Hotel Name</span>
 			<span class="stub_rating">
 				<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 			</span>
+		</div>
+		<div class="panel_section panel_section-footer">
+			<div class="col-xs-6">
+				{{> _displayedPrice}}
+			</div>
+			<div class="col-xs-6">
+				<a href="payment.html" class="btn btn-accent btn-lg btn-block">
+					Book <i class="fa fa-arrow-circle-right"></i>
+				</a>
+			</div>
 		</div>
 		<div class="panel_section panel_section-gallery gallery">
 			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
@@ -28,21 +39,47 @@ lead: Welcome to my blog!
 			</p>
 		</div>
 		<div class="panel_section">
-			<div class="col-xs-12"><h3>Breakfast</h3></div>
-			<div class="col-xs-12"><p>Continental breakfast included</p></div>
+			<h3 class="">Breakfast</h3>
+			<p class="">Continental breakfast included</p>
+			<h3 class="">Wifi</h3>
+			<p class="">&pound;12.50 for 24 hours access in public areas and room.</p>
+			<h3 class="">Check-in - 2pm</h3>
+			<h3 class="">Check-out - 11am</h3>
 		</div>
-		<div class="panel_section panel_section-footer">
-			<div class="col-xs-6">
-				<div>
-					total: <span class="fontSize2">&pound;500</span>
-				</div>
-				<small>includes tickets &amp; hotel</small>
+		<div class="panel_section">
+			<h3 class="">Hotel Facilities</h3>
+			<ul class="">
+				<li>Lounge Bar</li>
+				<li>Cocktail Lounge</li>
+				<li>High-speed Internet Access</li>
+				<li>Laundry Service</li>
+				<li>Restaurant</li>
+			</ul>
+			<h3 class="">Room Facilities</h3>
+			<ul class="">
+				<li>En-suite Bathroom</li>
+				<li>Satellite TV</li>
+				<li>Air Condititioing</li>
+				<li>Turndown Service</li>
+				<li>Direct Dial Telephone</li>
+				<li>Hairdryer</li>
+				<li>Tea and Coffee Facilities</li>
+			</ul>
+		</div>
+		<div class="panel_section">
+			<div>
+				<h3 class="">Hotel Address</h3>
+				<address class="">
+					Smuggler's Way<br >
+					Wandsworth<br >
+					London<br >
+					SW18 1EG
+				</address>
 			</div>
-			<div class="col-xs-6">
-				<a href="payment.html" class="btn btn-accent btn-lg">
-					Book<i class="fa fa-arrow-circle-right"></i>
-				</a>
+			<div class="">
+				<h3 class="">Underground</h3>
+				<p class="">Just 3 minutes walk from Wandsworth station, Main Line.</p>
 			</div>
 		</div>
 	</div>
-</section>
+</div>

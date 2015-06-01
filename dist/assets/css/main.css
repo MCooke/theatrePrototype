@@ -232,31 +232,31 @@ th {
   box-sizing: border-box;
 }
 
-.container, .section {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.container:before, .section:before, .container:after, .section:after {
+.container:before, .container:after {
   content: " ";
   display: table;
 }
-.container:after, .section:after {
+.container:after {
   clear: both;
 }
 @media (min-width: 768px) {
-  .container, .section {
+  .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container, .section {
+  .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .section {
+  .container {
     width: 1170px;
   }
 }
@@ -275,19 +275,19 @@ th {
   clear: both;
 }
 
-.row, .stub, .control, .section_row {
+.row, .stub, .control, .panel_section {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .stub:before, .control:before, .section_row:before, .row:after, .stub:after, .control:after, .section_row:after {
+.row:before, .stub:before, .control:before, .panel_section:before, .row:after, .stub:after, .control:after, .panel_section:after {
   content: " ";
   display: table;
 }
-.row:after, .stub:after, .control:after, .section_row:after {
+.row:after, .stub:after, .control:after, .panel_section:after {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .stub_aside, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .control_label, .control_input, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .stub_main, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .stub_aside, .col-md-5, .col-lg-5, .col-xs-6, .control_label, .control_input, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .stub_main, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main, .control_label, .control_input, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -503,7 +503,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .stub_aside, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .stub_main, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .stub_aside, .col-sm-6, .col-sm-7, .stub_main, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main, .control_label, .control_input {
     float: left;
   }
 
@@ -515,7 +515,7 @@ th {
     width: 16.66667%;
   }
 
-  .col-sm-3, .stub_aside {
+  .col-sm-3 {
     width: 25%;
   }
 
@@ -523,7 +523,7 @@ th {
     width: 33.33333%;
   }
 
-  .col-sm-5 {
+  .col-sm-5, .stub_aside {
     width: 41.66667%;
   }
 
@@ -531,7 +531,7 @@ th {
     width: 50%;
   }
 
-  .col-sm-7 {
+  .col-sm-7, .stub_main {
     width: 58.33333%;
   }
 
@@ -539,7 +539,7 @@ th {
     width: 66.66667%;
   }
 
-  .col-sm-9, .stub_main {
+  .col-sm-9 {
     width: 75%;
   }
 
@@ -551,7 +551,7 @@ th {
     width: 91.66667%;
   }
 
-  .col-sm-12 {
+  .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main, .control_label, .control_input {
     width: 100%;
   }
 
@@ -1144,7 +1144,7 @@ h3, .fontSize4, .btn-lg, .control {
   line-height: 1.96597;
 }
 
-h2, .fontSize3 {
+h2, .fontSize3, .price_amount {
   font-size: 18.2505px;
   line-height: 1.70954;
 }
@@ -1161,95 +1161,95 @@ h1, .fontSize2, .stub_title {
 
 @media (min-width: 768px) {
   html, p, .fontSize6, .input_label {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.3;
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .input_field, .seat {
-    font-size: 19.2px;
+    font-size: 14.4px;
     line-height: 1.08333;
   }
 
   h3, .fontSize4, .btn-lg, .control {
-    font-size: 23.04px;
+    font-size: 17.28px;
     line-height: 1.80556;
   }
 
-  h2, .fontSize3 {
-    font-size: 27.648px;
+  h2, .fontSize3, .price_amount {
+    font-size: 20.736px;
     line-height: 1.50463;
   }
 
   h1, .fontSize2, .stub_title {
-    font-size: 33.1776px;
+    font-size: 24.8832px;
     line-height: 1.25386;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 39.81312px;
+    font-size: 29.85984px;
     line-height: 1.04488;
   }
 }
 @media (min-width: 992px) {
   html, p, .fontSize6, .input_label {
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.3;
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .input_field, .seat {
-    font-size: 19.6px;
-    line-height: 1;
+    font-size: 16.8px;
+    line-height: 1.85714;
   }
 
   h3, .fontSize4, .btn-lg, .control {
-    font-size: 27.44px;
-    line-height: 1.42857;
+    font-size: 23.52px;
+    line-height: 1.32653;
   }
 
-  h2, .fontSize3 {
-    font-size: 38.416px;
-    line-height: 1.02041;
+  h2, .fontSize3, .price_amount {
+    font-size: 32.928px;
+    line-height: 1.89504;
   }
 
   h1, .fontSize2, .stub_title {
-    font-size: 53.7824px;
-    line-height: 1.45773;
+    font-size: 46.0992px;
+    line-height: 1.3536;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 75.29536px;
-    line-height: 1.04123;
+    font-size: 64.53888px;
+    line-height: 1.93372;
   }
 }
 @media (min-width: 1200p4) {
   html, p, .fontSize6, .input_label {
-    font-size: 22px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.3;
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .input_field, .seat {
-    font-size: 33px;
-    line-height: 1;
+    font-size: 18px;
+    line-height: 1.73333;
   }
 
   h3, .fontSize4, .btn-lg, .control {
-    font-size: 49.5px;
-    line-height: 1.33333;
+    font-size: 27px;
+    line-height: 1.15556;
   }
 
-  h2, .fontSize3 {
-    font-size: 74.25px;
-    line-height: 1.77778;
+  h2, .fontSize3, .price_amount {
+    font-size: 40.5px;
+    line-height: 1.54074;
   }
 
   h1, .fontSize2, .stub_title {
-    font-size: 111.375px;
-    line-height: 1.18519;
+    font-size: 60.75px;
+    line-height: 1.02716;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 167.0625px;
-    line-height: 1.58025;
+    font-size: 91.125px;
+    line-height: 1.36955;
   }
 }
 html {
@@ -1268,16 +1268,24 @@ body {
   background: #eeeeee;
 }
 
-.btn {
+.section {
+  margin-top: 20px;
+}
+.section_wrapper {
   background: #fafafa;
-  border: 0px solid #fafafa;
+  box-shadow: 0px 5px 5px #bdbdbd;
+}
+
+.btn {
+  background: #f5f5f5;
+  border: 0px solid #f5f5f5;
   border-radius: 3px;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
 }
 .btn-primary, .btn-accent {
-  color: #fafafa;
+  color: #f5f5f5;
 }
 .btn-primary {
   background: #7986cb;
@@ -1291,6 +1299,7 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  text-align: center;
 }
 .btn-thin {
   padding: 10px 5px;
@@ -1325,6 +1334,11 @@ body {
   border-bottom: 1px solid #bdbdbd;
 }
 
+@media (min-width: 768px) {
+  .stub_thumb {
+    height: 200px;
+  }
+}
 .control {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -1355,6 +1369,12 @@ body {
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .panel_section-footer {
+    position: static;
+    width: auto;
+  }
+}
 .input {
   position: relative;
   border-top: 1px solid #616161;
@@ -1373,9 +1393,13 @@ body {
   left: 25px;
 }
 
+.price {
+  text-align: right;
+}
+
 .seat {
   min-height: 40px;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #f5f5f5;
 }
 .seat .seat_information {
   float: right;
@@ -1389,15 +1413,15 @@ body {
 }
 
 .block {
-  border: 1px solid #fafafa;
+  border: 1px solid #f5f5f5;
   height: 70px;
   width: 70px;
-  background: #fafafa;
+  background: #f5f5f5;
   display: inline-block;
 }
 .block:after {
   display: block;
-  content: "#fafafa";
+  content: "#f5f5f5";
 }
 .block-primary {
   background: #7986cb;
@@ -1412,12 +1436,6 @@ body {
   content: "#b388ff";
 }
 
-.section {
-  background: #fafafa;
-  box-shadow: 0px 5px 5px #bdbdbd;
-  margin-top: 20px;
-}
-
 .img-responsive {
   max-width: 100%;
 }
@@ -1426,17 +1444,19 @@ body {
   display: none;
 }
 
-.group-right {
-  float: right;
-}
-
-.form {
-  background: #fafafa;
-}
-
 .styleBlock {
   border-bottom: 1px solid #7986cb;
   padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background: #fafafa;
+  }
+
+  .section {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,9 +3,12 @@ title: Home
 heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
+<div class="container">
+	<div class="row">
+		{{> _summary summary.seat}}
 
-{{> _summary}}
+		{{> _seatControls}}
 
-{{> _seatControls}}
-{{> _seatMap}}
-{{> _seatChoice}}
+		{{> _seatChoice}}
+	</div>
+</div>

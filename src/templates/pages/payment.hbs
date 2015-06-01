@@ -3,46 +3,49 @@ title: Payment
 heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
+<div class="wrapper container">
+	<div class="row">
+		{{> _summary summary.payment}}
 
-{{> _summary}}
+		<div class="section col-xs-12 col-sm-8">
+			<form action="" class="row form">
+				<h1 class="col-xs-12">Payment Form</h1>
+				<div class="input col-xs-6">
+					<label class="input_label" for=""><small>First Name</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="First Name">
+				</div>
+				<div class="input col-xs-6">
+					<label class="input_label" for=""><small>Surname</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="Surname">
+				</div>
+				<div class="input col-xs-12">
+					<label class="input_label" for=""><small>Email</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="Email">
+				</div>
+				<div class="input col-xs-12">
+					<label class="input_label" for=""><small>Phone Number</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="Phone Number">
+				</div>
+				<div class="input col-xs-12">
+					<label class="input_label" for=""><small>Card Number</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="Card Number">
+				</div>
+				<div class="input col-xs-6">
+					<label class="input_label" for=""><small>Expiry Date</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="Expiry Date">
+				</div>
+				<div class="input col-xs-6">
+					<label class="input_label" for=""><small>CCV</small></label>
+					<input type="email" class="input_field" id="exampleInputEmail3" ="CCV">
+				</div>
+				<div class="col-xs-12">
+					{{> _displayedPrice}}
+				</div>
+				<div class="col-xs-12">
+					<button class="btn btn-primary btn-block btn-lg"><i class="fa fa-lock"></i> Make secure booking - <i class="fa fa-arrow-circle-right"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
 
-<div class="section">
-	<form action="" class="row form">
-		<h1 class="col-xs-12">Payment Form</h1>
-		<div class="input col-xs-6">
-			<label class="input_label" for=""><small>First Name</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="First Name">
-		</div>
-		<div class="input col-xs-6">
-			<label class="input_label" for=""><small>Surname</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="Surname">
-		</div>
-		<div class="input col-xs-12">
-			<label class="input_label" for=""><small>Email</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="Email">
-		</div>
-		<div class="input col-xs-12">
-			<label class="input_label" for=""><small>Phone Number</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="Phone Number">
-		</div>
-		<div class="input col-xs-12">
-			<label class="input_label" for=""><small>Card Number</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="Card Number">
-		</div>
-		<div class="input col-xs-6">
-			<label class="input_label" for=""><small>Expiry Date</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="Expiry Date">
-		</div>
-		<div class="input col-xs-6">
-			<label class="input_label" for=""><small>CCV</small></label>
-			<input type="email" class="input_field" id="exampleInputEmail3" ="CCV">
-		</div>
-		<div class="col-xs-12">
-		<div>total: <span class="fontSize3">&pound;500</span></div>
-			<small>includes tickets &amp; hotel</small>
-		</div>
-		<div class="col-xs-12">
-			<button class="btn btn-primary btn-block btn-lg"><i class="fa fa-lock"></i> Make secure booking - <i class="fa fa-arrow-circle-right"></i></button>
-		</div>
-	</form>
 </div>

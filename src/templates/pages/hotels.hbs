@@ -3,15 +3,18 @@ title: Hotels
 heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
-
-{{> _summary}}
-
-{{> _hotelControls}}
- 
-<div class="section">
+<div class="wrapper container">
 	<div class="row">
-		{{#each hotels}}
-			{{> _hotelStub}}
-		{{/each}}
+		{{> _summary summary.hotels}}
+
+		{{> _hotelControls}}
+
+		<div class="section col-xs-12 col-sm-8">
+			<div class="row">
+				{{#each hotels}}
+				{{> _hotelStub}}
+				{{/each}}
+			</div>
+		</div>	
 	</div>
 </div>
