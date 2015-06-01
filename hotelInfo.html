@@ -30,8 +30,9 @@
 
     
 <div class="wrapper container">
-	<section class="section col-xs-12 col-sm-4">
-	<div class="stub stub-summary">
+	<div class="row">
+		<section class="section section_wrapper summary col-xs-12 col-sm-4">
+	<div class="stub">
 		<div class="stub_aside">
 			<div class="stub_thumb" style="background-image: url('http://lorempixel.com/500/500/city/1');">
 			</div>
@@ -76,84 +77,90 @@
 	</div>
 	
 	
-</section>
-	<div class="col-xs-12 col-sm-4">
-		<a id="pickDifferent" href="hotels.html" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> Pick a different hotel</a>
+	
+	<div id="summaryPull" class="summary_pull">
+		<i class="fa fa-chevron-down fa-2x"></i>
 	</div>
-	<div class="panel col-xs-12 col-sm-8">
-		<div class="panel_section panel_section-header">
-			<span class="panel_title">Hotel Name</span>
-			<span class="stub_rating">
-				<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-			</span>
+	
+</section>
+		<div class="section col-xs-12 col-sm-4">
+			<a id="pickDifferent" href="hotels.html#summaryPull" class="btn btn-block btn-primary"><i class="fa fa-arrow-circle-left"></i> Pick a different hotel</a>
 		</div>
-		<div class="panel_section panel_section-footer">
-			<div class="col-xs-6">
-				<div class="price">
+		<div class="section section_wrapper panel col-xs-12 col-sm-8">
+			<div class="panel_section panel_section-header">
+				<span class="panel_title">Hotel Name</span>
+				<span class="stub_rating">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</span>
+			</div>
+			<div class="panel_section panel_section-footer">
+				<div class="col-xs-6">
+					<div class="price">
 	<div class="price_total">total: <span class="price_amount">&pound;500</span></div>
 	<div class="price_description">includes tickets &amp; hotel</div>
 </div>
+				</div>
+				<div class="col-xs-6">
+					<a href="payment.html" class="btn btn-accent btn-lg btn-block">
+						Book <i class="fa fa-arrow-circle-right"></i>
+					</a>
+				</div>
 			</div>
-			<div class="col-xs-6">
-				<a href="payment.html" class="btn btn-accent btn-lg btn-block">
-					Book <i class="fa fa-arrow-circle-right"></i>
-				</a>
+			<div class="panel_section panel_section-gallery gallery">
+				<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
+				<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
+				<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
+				<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
+				<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
 			</div>
-		</div>
-		<div class="panel_section panel_section-gallery gallery">
-			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
-			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
-			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
-			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
-			<div class="gallery_item"><img src="http://placehold.it/500x300" class="img-responsive" alt=""></div>
-		</div>
-		<div class="panel_section panel_section-body">
-			<h3>Introduction</h3>
-			<p>
-				The Holiday Inn Express Wandsworth Battersea is a delightfully cosy stopover, perfect for those on a budget. Just a short distance from Victoria Station, you're ideally situated for a trip into Theatreland, where there's a whole host of fantastic attractions ready for you to explore. Take a short journey and you'll be in the heart of the West End, ready to take in all of the glitz and glamour. Perfect if you're seeing a nearby show such as Wicked or Billy Elliot, or travelling further into the West End to see another fantastic show, The Holiday Inn Express Wandsworth Battersea gives you everything you'll need to take in everything that London has to offer. Convenient and comfortable, the Holiday Inn Express Wandsworth Battersea has everything that you need to make your Show & Stay a theatre break to remember. 
-			</p>
-		</div>
-		<div class="panel_section">
-			<h3 class="">Breakfast</h3>
-			<p class="">Continental breakfast included</p>
-			<h3 class="">Wifi</h3>
-			<p class="">&pound;12.50 for 24 hours access in public areas and room.</p>
-			<h3 class="">Check-in - 2pm</h3>
-			<h3 class="">Check-out - 11am</h3>
-		</div>
-		<div class="panel_section">
-			<h3 class="">Hotel Facilities</h3>
-			<ul class="">
-				<li>Lounge Bar</li>
-				<li>Cocktail Lounge</li>
-				<li>High-speed Internet Access</li>
-				<li>Laundry Service</li>
-				<li>Restaurant</li>
-			</ul>
-			<h3 class="">Room Facilities</h3>
-			<ul class="">
-				<li>En-suite Bathroom</li>
-				<li>Satellite TV</li>
-				<li>Air Condititioing</li>
-				<li>Turndown Service</li>
-				<li>Direct Dial Telephone</li>
-				<li>Hairdryer</li>
-				<li>Tea and Coffee Facilities</li>
-			</ul>
-		</div>
-		<div class="panel_section">
-			<div>
-				<h3 class="">Hotel Address</h3>
-				<address class="">
-					Smuggler's Way<br >
-					Wandsworth<br >
-					London<br >
-					SW18 1EG
-				</address>
+			<div class="panel_section panel_section-body">
+				<h3>Introduction</h3>
+				<p>
+					The Holiday Inn Express Wandsworth Battersea is a delightfully cosy stopover, perfect for those on a budget. Just a short distance from Victoria Station, you're ideally situated for a trip into Theatreland, where there's a whole host of fantastic attractions ready for you to explore. Take a short journey and you'll be in the heart of the West End, ready to take in all of the glitz and glamour. Perfect if you're seeing a nearby show such as Wicked or Billy Elliot, or travelling further into the West End to see another fantastic show, The Holiday Inn Express Wandsworth Battersea gives you everything you'll need to take in everything that London has to offer. Convenient and comfortable, the Holiday Inn Express Wandsworth Battersea has everything that you need to make your Show & Stay a theatre break to remember. 
+				</p>
 			</div>
-			<div class="">
-				<h3 class="">Underground</h3>
-				<p class="">Just 3 minutes walk from Wandsworth station, Main Line.</p>
+			<div class="panel_section">
+				<h3 class="">Breakfast</h3>
+				<p class="">Continental breakfast included</p>
+				<h3 class="">Wifi</h3>
+				<p class="">&pound;12.50 for 24 hours access in public areas and room.</p>
+				<h3 class="">Check-in - 2pm</h3>
+				<h3 class="">Check-out - 11am</h3>
+			</div>
+			<div class="panel_section">
+				<h3 class="">Hotel Facilities</h3>
+				<ul class="">
+					<li>Lounge Bar</li>
+					<li>Cocktail Lounge</li>
+					<li>High-speed Internet Access</li>
+					<li>Laundry Service</li>
+					<li>Restaurant</li>
+				</ul>
+				<h3 class="">Room Facilities</h3>
+				<ul class="">
+					<li>En-suite Bathroom</li>
+					<li>Satellite TV</li>
+					<li>Air Condititioing</li>
+					<li>Turndown Service</li>
+					<li>Direct Dial Telephone</li>
+					<li>Hairdryer</li>
+					<li>Tea and Coffee Facilities</li>
+				</ul>
+			</div>
+			<div class="panel_section">
+				<div>
+					<h3 class="">Hotel Address</h3>
+					<address class="">
+						Smuggler's Way<br >
+						Wandsworth<br >
+						London<br >
+						SW18 1EG
+					</address>
+				</div>
+				<div class="">
+					<h3 class="">Underground</h3>
+					<p class="">Just 3 minutes walk from Wandsworth station, Main Line.</p>
+				</div>
 			</div>
 		</div>
 	</div>
