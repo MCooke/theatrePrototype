@@ -1,10 +1,17 @@
 .price {
 	text-align: right;
+	margin-bottom: 15px;
+	&-large {
+		@extend %fontSize5;
+	}
 	&_total {
 
 	}
 	&_amount {
 		@extend %fontSize3;
+		&-large {
+			@extend %fontSize2;
+		}
 	}
 	&_description {
 

@@ -7,10 +7,10 @@ lead: Welcome to my blog!
 	<div class="row">
 		{{> _summary summary.payment}}
 
-		<div class="section col-xs-12 col-sm-8">
+		<div class="section section_wrapper col-xs-12 col-sm-8">
 			<form action="" class="row form">
 				<h1 class="col-xs-12">Payment Form</h1>
-				<div class="input col-xs-6">
+				<div class="input input-right col-xs-6">
 					<label class="input_label" for=""><small>First Name</small></label>
 					<input type="email" class="input_field" id="exampleInputEmail3" ="First Name">
 				</div>
@@ -30,16 +30,20 @@ lead: Welcome to my blog!
 					<label class="input_label" for=""><small>Card Number</small></label>
 					<input type="email" class="input_field" id="exampleInputEmail3" ="Card Number">
 				</div>
-				<div class="input col-xs-6">
+				<div class="input input-right input-bottom col-xs-6">
 					<label class="input_label" for=""><small>Expiry Date</small></label>
 					<input type="email" class="input_field" id="exampleInputEmail3" ="Expiry Date">
 				</div>
-				<div class="input col-xs-6">
+				<div class="input input-bottom col-xs-6">
 					<label class="input_label" for=""><small>CCV</small></label>
 					<input type="email" class="input_field" id="exampleInputEmail3" ="CCV">
 				</div>
 				<div class="col-xs-12">
-					{{> _displayedPrice}}
+					{{!-- {{> _displayedPrice}} --}}
+					<div class="price price-large">
+						<div class="price_total">total: <span class="price_amount price_amount-large">&pound;500</span></div>
+						<div class="price_description">includes tickets &amp; hotel</div>
+					</div>
 				</div>
 				<div class="col-xs-12">
 					<button class="btn btn-primary btn-block btn-lg"><i class="fa fa-lock"></i> Make secure booking - <i class="fa fa-arrow-circle-right"></i></button>

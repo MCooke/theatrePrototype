@@ -13,6 +13,8 @@
 	&_aside {
 		@extend .col-xs-4;
 		@extend .col-sm-5;
+		padding-left: 0;
+		padding-right: 0;
 		&-small {
 			height: 50px;
 		}
@@ -47,6 +49,13 @@
 		@extend .col-xs-12;
 		// padding-bottom: 10px;
 		border-bottom: 1px solid $grey400;
+	}
+	&_clickable {
+		content: ">";
+		display: block;
+		position: absolute;
+		right: 5px;
+		top: 40%;
 	}
 }
 

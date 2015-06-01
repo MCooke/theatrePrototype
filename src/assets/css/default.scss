@@ -88,6 +88,11 @@ body {
 	padding-bottom: 25px;
 }
 
+.summary_pull {
+	padding: 5px;
+	text-align: center;
+}
+
 @media (min-width: $screen-sm-min) {
 	.wrapper{
 		background: $grey50;

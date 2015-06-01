@@ -1,10 +1,12 @@
 {
 	"seat": {
-		"hasShow": "1"
+		"hasShow": "1",
+		"hasPull": "1"
 	},
 	"hotels": {
 		"hasShow": "1",
-		"hasSeat": "1"
+		"hasSeat": "1",
+		"hasPull": "1"
 	},
 	"payment": {
 		"hasShow": "1",
