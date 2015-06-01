@@ -49,3 +49,11 @@
 		border-bottom: 1px solid $grey400;
 	}
 }
+
+@media (min-width: $screen-sm-min) {
+	.stub{
+		&_thumb {
+			height: 200px;
+		}
+	}
+}
