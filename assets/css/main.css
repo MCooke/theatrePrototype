@@ -287,7 +287,7 @@ th {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .stub_aside, .col-md-5, .col-lg-5, .col-xs-6, .control_label, .control_input, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .stub_main, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .stub_aside, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .stub_aside, .col-md-5, .col-lg-5, .col-xs-6, .control_label, .control_input, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .stub_main, .col-md-7, .col-lg-7, .col-xs-8, .stub_main, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .stub_wrapper, .col-sm-12, .stub-summary .stub_main, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -503,7 +503,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .stub_aside, .col-sm-6, .col-sm-7, .stub_main, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .stub_aside, .col-sm-6, .col-sm-7, .stub_main, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .stub-summary .stub_main {
     float: left;
   }
 
@@ -551,7 +551,7 @@ th {
     width: 91.66667%;
   }
 
-  .col-sm-12, .stub-summary .stub_aside, .stub-summary .stub_main {
+  .col-sm-12, .stub-summary .stub_main {
     width: 100%;
   }
 
@@ -1564,10 +1564,18 @@ a {
 
 .navbar {
   margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 99;
+  background: black;
+  width: 100%;
 }
 
 body {
-  background: #eeeeee;
+  background: #bdbdbd;
+  padding-top: 50px;
 }
 
 .section {
@@ -1576,7 +1584,6 @@ body {
 }
 .section_wrapper {
   background: #fafafa;
-  box-shadow: 0px 5px 5px #bdbdbd;
 }
 
 @media (min-width: 768px) {
@@ -1625,7 +1632,7 @@ body {
   margin-bottom: 10px;
 }
 .stub_aside {
-  padding-left: 0;
+  padding-left: 15px;
   padding-right: 0;
 }
 .stub_aside-small {
@@ -1635,7 +1642,7 @@ body {
   float: right;
 }
 .stub_thumb {
-  height: 125px;
+  height: 80px;
   background-size: cover;
   background-position: 50%;
 }
@@ -1660,6 +1667,11 @@ body {
   top: 40%;
 }
 
+@media (min-width: 480px) {
+  .stub_thumb {
+    height: 200px;
+  }
+}
 .control {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -1725,6 +1737,10 @@ body {
   text-align: right;
 }
 
+.summary {
+  margin-bottom: 30px;
+}
+
 .seat {
   min-height: 40px;
   border-bottom: 1px solid #f5f5f5;
@@ -1779,6 +1795,7 @@ body {
 
 .summary_pull {
   padding: 5px;
+  padding-top: 50px;
   text-align: center;
 }
 
