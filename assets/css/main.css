@@ -1468,28 +1468,28 @@ h1, .fontSize2, .stub_title, .price_amount-large {
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .control_label, .input_field, .price-large, .seat {
-    font-size: 13.8px;
-    line-height: 1.13043;
+    font-size: 14.4px;
+    line-height: 1.08333;
   }
 
   h3, .fontSize4, .btn-lg, .control_input {
-    font-size: 15.87px;
-    line-height: 1.96597;
+    font-size: 17.28px;
+    line-height: 1.80556;
   }
 
   h2, .fontSize3, .price_amount {
-    font-size: 18.2505px;
-    line-height: 1.70954;
+    font-size: 20.736px;
+    line-height: 1.50463;
   }
 
   h1, .fontSize2, .stub_title, .price_amount-large {
-    font-size: 20.98807px;
-    line-height: 1.48656;
+    font-size: 24.8832px;
+    line-height: 1.25386;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 24.13629px;
-    line-height: 1.29266;
+    font-size: 29.85984px;
+    line-height: 1.04488;
   }
 }
 @media (min-width: 992px) {
@@ -1499,59 +1499,59 @@ h1, .fontSize2, .stub_title, .price_amount-large {
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .control_label, .input_field, .price-large, .seat {
-    font-size: 16.8px;
-    line-height: 1.85714;
+    font-size: 15.6px;
+    line-height: 1;
   }
 
   h3, .fontSize4, .btn-lg, .control_input {
-    font-size: 23.52px;
-    line-height: 1.32653;
+    font-size: 20.28px;
+    line-height: 1.53846;
   }
 
   h2, .fontSize3, .price_amount {
-    font-size: 32.928px;
-    line-height: 1.89504;
+    font-size: 26.364px;
+    line-height: 1.18343;
   }
 
   h1, .fontSize2, .stub_title, .price_amount-large {
-    font-size: 46.0992px;
-    line-height: 1.3536;
+    font-size: 34.2732px;
+    line-height: 1.82066;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 64.53888px;
-    line-height: 1.93372;
+    font-size: 44.55516px;
+    line-height: 1.40051;
   }
 }
-@media (min-width: 1200p4) {
+@media (min-width: 1200px) {
   html, p, .fontSize6, .input_label {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.3;
   }
 
   blockquote, label, .fontSize5, .btn, .stub_footer, .control_label, .input_field, .price-large, .seat {
-    font-size: 18px;
-    line-height: 1.73333;
+    font-size: 16.8px;
+    line-height: 1.08333;
   }
 
   h3, .fontSize4, .btn-lg, .control_input {
-    font-size: 27px;
-    line-height: 1.15556;
+    font-size: 20.16px;
+    line-height: 1.80556;
   }
 
   h2, .fontSize3, .price_amount {
-    font-size: 40.5px;
-    line-height: 1.54074;
+    font-size: 24.192px;
+    line-height: 1.50463;
   }
 
   h1, .fontSize2, .stub_title, .price_amount-large {
-    font-size: 60.75px;
-    line-height: 1.02716;
+    font-size: 29.0304px;
+    line-height: 1.25386;
   }
 
   .hero, .fontSize1, .panel_title {
-    font-size: 91.125px;
-    line-height: 1.36955;
+    font-size: 34.83648px;
+    line-height: 1.04488;
   }
 }
 html {
@@ -1586,6 +1586,9 @@ body {
   .section_wrapper {
     background: transparent;
     box-shadow: none;
+  }
+  .section-control {
+    margin-top: 10px;
   }
 }
 .btn {
@@ -1663,7 +1666,6 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 .control-stage {
-  padding-bottom: 10px;
   border: none;
 }
 .control_input {
@@ -1688,6 +1690,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .panel {
+    margin-bottom: 0;
+  }
   .panel_section-footer {
     position: static;
     width: auto;
