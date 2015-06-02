@@ -1,6 +1,5 @@
 .control {
 	@extend .row;
-	@extend %fontSize4;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-bottom: 1px solid $grey200;
@@ -9,12 +8,15 @@
 		border: none;
 	}
 	&_label {
+		@extend %fontSize5;
 		@extend .col-xs-6;
-		@extend .col-sm-12;
+		// @extend .col-sm-5;
+		// @extend .col-sm-12;
 	}
 	&_input {
+		@extend %fontSize4;
 		@extend .col-xs-6;
-		@extend .col-sm-12;
+		// @extend .col-sm-12;
 		text-align: right;
 		text-decoration: underline;
 	}

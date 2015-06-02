@@ -11,10 +11,10 @@
 		}
 	}
 	&_aside {
+				padding-left: 0;
+		padding-right: 0;
 		@extend .col-xs-4;
 		@extend .col-sm-5;
-		padding-left: 0;
-		padding-right: 0;
 		&-small {
 			height: 50px;
 		}
@@ -61,8 +61,8 @@
 
 @media (min-width: $screen-sm-min) {
 	.stub{
-		&_thumb {
-			height: 200px;
-		}
+		// &_thumb {
+		// 	height: 200px;
+		// }
 	}
 }
