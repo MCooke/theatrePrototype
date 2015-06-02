@@ -3,15 +3,15 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	&-summary {
-		.stub_aside{
-			@extend .col-sm-12;
-		}
+		// .stub_aside{
+		// 	@extend .col-sm-12;
+		// }
 		.stub_main {
 			@extend .col-sm-12;
 		}
 	}
 	&_aside {
-				padding-left: 0;
+		padding-left: 15px;
 		padding-right: 0;
 		@extend .col-xs-4;
 		@extend .col-sm-5;
@@ -30,7 +30,7 @@
 		@extend %fontSize2;
 	}
 	&_thumb {
-		height: 125px;
+		height: 80px;
 		background-size: cover;
 		background-position: 50%;
 	}
@@ -59,10 +59,10 @@
 	}
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: $screen-xs-min) {
 	.stub{
-		// &_thumb {
-		// 	height: 200px;
-		// }
+		 &_thumb {
+		 	height: 200px;
+		 }
 	}
 }
