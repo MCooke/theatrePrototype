@@ -17,10 +17,18 @@ $breakpoints: (
 
 .navbar{
 	margin-bottom: 20px;
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 50px;
+	z-index: 99;
+	background: black;
+	width: 100%;
 }
 
 body {
-	background: $grey200;
+	background: $grey400;
+	padding-top: 50px;	
 }
 
 
@@ -31,6 +39,7 @@ body {
 @import "blocks/panel";
 @import "blocks/input";
 @import "blocks/price";
+@import "summary";
 
 .seat{
 	min-height: 40px;
@@ -90,6 +99,7 @@ body {
 
 .summary_pull {
 	padding: 5px;
+	padding-top: 50px;
 	text-align: center;
 }
 
