@@ -22,8 +22,20 @@ $breakpoints: (
 	left: 0;
 	height: 50px;
 	z-index: 99;
-	background: black;
+	background: #700;
 	width: 100%;
+	box-shadow: 0 0 5px;
+
+		a{
+			color: white;
+			display: inline-block;
+			padding-top: 5px;
+
+			img{
+				vertical-align: top;
+			}
+
+		}
 }
 
 body {
