@@ -4,8 +4,8 @@
 @import "fontProps";
 @import "base";
 
-$brand_primary: $indigo300;
-$brand_accent: $deepPurpleA100;
+$brand_primary: $blueGrey500;
+$brand_accent: $redA700;
 $brand_white: $grey100;
 
 $breakpoints: (
@@ -22,7 +22,7 @@ $breakpoints: (
 	left: 0;
 	height: 50px;
 	z-index: 99;
-	background: #700;
+	background: $blueGrey500;
 	width: 100%;
 	box-shadow: 0 0 5px;
 
