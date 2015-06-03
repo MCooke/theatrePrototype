@@ -1569,8 +1569,17 @@ a {
   left: 0;
   height: 50px;
   z-index: 99;
-  background: black;
+  background: #700;
   width: 100%;
+  box-shadow: 0 0 5px;
+}
+.navbar a {
+  color: white;
+  display: inline-block;
+  padding-top: 5px;
+}
+.navbar a img {
+  vertical-align: top;
 }
 
 body {
