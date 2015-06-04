@@ -1564,14 +1564,8 @@ a {
 
 .navbar {
   margin-bottom: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
   height: 50px;
-  z-index: 99;
-  background: #607d8b;
   width: 100%;
-  box-shadow: 0 0 5px;
 }
 .navbar a {
   color: white;
@@ -1584,7 +1578,16 @@ a {
 
 body {
   background: #bdbdbd;
-  padding-top: 50px;
+  padding-top: 10px;
+}
+
+.brandHorizon {
+  height: 5px;
+  width: 100%;
+  background: #607d8b;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .section {
@@ -1676,11 +1679,6 @@ body {
   top: 40%;
 }
 
-@media (min-width: 480px) {
-  .stub_thumb {
-    height: 200px;
-  }
-}
 .control {
   margin-top: 5px;
   margin-bottom: 5px;
